@@ -629,13 +629,36 @@ body.dark-mode .reserva label {
     .hero {
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
+
+        min-height: auto;
         padding: 150px 24px 80px;
         gap: 48px;
-    }   
+    }
 
     .hero-text {
+        width: 100%;
         max-width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 28px;
+        display: block;
+        margin: 0 auto;
     }
 
     h1 {
@@ -644,20 +667,6 @@ body.dark-mode .reserva label {
 
     p {
         font-size: 16px;
-    }
-
-    .hero-image {
-        padding: 12px;
-        border-radius: 24px;
-    }
-
-    .hero-image img {
-        width: 100%;
-        max-width: 340px;
-        height: auto;
-        object-fit: contain;
-        border-radius: 24px;
-        margin: 0 auto;
     }
 
     .sobre,
@@ -750,11 +759,16 @@ body.dark-mode .reserva label {
         font-size: 44px;
     }
 
+    .hero-image img {
+        max-width: 360px;
+    }
+
     .sobre h2,
     .cardapio h2,
     .galeria h2,
     .contato h2,
-    .reserva h2 {
+    .reserva h2,
+    .localizacao h2 {
         font-size: 36px;
     }
 
@@ -779,20 +793,24 @@ body.dark-mode .reserva label {
     }
 
     .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
         min-height: auto;
         padding: 120px 32px 60px;
         gap: 32px;
     }
 
-    h1 {
-        font-size: 48px;
-    }
-
     .hero-image img {
         width: 100%;
-        max-width: 320px;
+        max-width: 360px;
         height: auto;
         object-fit: contain;
+    }
+
+    h1 {
+        font-size: 48px;
     }
 
     .sobre,
