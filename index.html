@@ -177,7 +177,7 @@
             <input type="number" name="pessoas" min="1" max="10" id="pessoas">
 
             <button type="submit" class="btn">
-                Fazer Reserva
+                Fazer Reserva 📱
             </button>
 
             </form>
@@ -194,6 +194,17 @@
                 <p>Liberdade • São Paulo</p>
                 <p>Rua Hanami, 237</p>
                 <p>Todos os dias • 08h às 22h</p>
+            </div>
+
+            <div class="mapa">
+                <iframe
+                src="https://www.google.com/maps?q=Liberdade,%20São%20Paulo&output=embed"
+                width="100%"
+                height="550"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
             </div>
 
         </section>
@@ -311,12 +322,16 @@
     const dataFormatada = `${partesData[2]}/${partesData[1]}`;
     const horario = document.getElementById('horario').value;
     const pessoas = document.getElementById('pessoas').value;
+    if (nome === '' || data === '' || horario === '' || pessoas === '') {
+    alert('Por favor, preencha todos os campos antes de fazer a reserva.');
+    return;
+}
 
-    const mensagem = `Olá! Gostaria de fazer uma reserva no Velutto Café.
-    Nome: ${nome}
-    Data: ${dataFormatada}
-    Horário: ${horario}
-    Número de pessoas: ${pessoas}`;
+const mensagem = `Olá! Gostaria de fazer uma reserva no Velutto Café.
+Nome: ${nome}
+Data: ${dataFormatada}
+Horário: ${horario}
+Número de pessoas: ${pessoas}`;
 
     const telefone = '5511961576422';
     const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
