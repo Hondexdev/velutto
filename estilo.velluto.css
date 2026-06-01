@@ -319,6 +319,7 @@ span {
     text-align: center;
 }
 
+
 .reserva p {
     max-width: 600px;
     margin: 0 auto 32px;
@@ -364,9 +365,13 @@ span {
     opacity: 1;
 }
 
-.reserva label {
+
+.input-title {
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 400;
     display: block;
-    margin: 15px 0 8px;
+    margin-bottom: -8px;
     color: #6f6256;
     font-size: 0.95rem;
     text-align: left;
@@ -592,7 +597,7 @@ body.dark-mode .reserva input::placeholder {
     color: #b7a79a;
 }
 
-body.dark-mode .reserva label {
+body.dark-mode .input-title {
     color: #d8c9bc;
 }
 
