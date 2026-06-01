@@ -307,7 +307,8 @@
 
     const nome = document.getElementById('nome').value;
     const data = document.getElementById('data').value;
-    const dataFormatada = data.split('-').reverse().join('/');
+    const partesData = data.split('-');
+    const dataFormatada = `${partesData[2]}/${partesData[1]}`;
     const horario = document.getElementById('horario').value;
     const pessoas = document.getElementById('pessoas').value;
 
